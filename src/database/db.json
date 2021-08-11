@@ -1,0 +1,11 @@
+{ 
+    "user":[
+        {
+            "name":"Tony Stark",
+            "username": "ironman",
+            "email": "ironman@gmail.com",
+            "phone": "9632587410",
+            "address": "Stark Tower"
+        }
+    ]
+}
