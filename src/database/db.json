@@ -1,11 +1,52 @@
-{ 
-    "user":[
-        {
-            "name":"Tony Stark",
-            "username": "ironman",
-            "email": "ironman@gmail.com",
-            "phone": "9632587410",
-            "address": "Stark Tower"
-        }
-    ]
+{
+  "user": [
+    {
+      "name": "Tony Stark",
+      "username": "ironman",
+      "email": "ironman@gmail.com",
+      "phone": "9632587410",
+      "address": "Stark Tower",
+      "id": 1
+    },
+    {
+      "name": "anilraj meena",
+      "username": "anil050797",
+      "email": "anil@test.com",
+      "phone": "9632587410",
+      "work": "web developer",
+      "id": 2
+    },
+    {
+      "name": "anilraj meena",
+      "username": "anil050797",
+      "email": "anil@test.com",
+      "phone": "9632587410",
+      "work": "web developer",
+      "id": 3
+    },
+    {
+      "name": "anilraj",
+      "username": "anilraj",
+      "email": "anil@test.com",
+      "phone": "9649333527",
+      "work": "web",
+      "id": 4
+    },
+    {
+      "name": "Brush ",
+      "username": "brushbanner",
+      "email": "brush@banner",
+      "phone": "1234560789",
+      "address": "Kolkata",
+      "id": 5
+    },
+    {
+      "name": "petter",
+      "username": "petterParker",
+      "email": "petter@parker",
+      "phone": "3214560987",
+      "address": "New York",
+      "id": 6
+    }
+  ]
 }
