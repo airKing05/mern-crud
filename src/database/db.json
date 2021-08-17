@@ -9,28 +9,13 @@
       "id": 1
     },
     {
-      "name": "anilraj meena",
-      "username": "anil050797",
-      "email": "anil@test.com",
-      "phone": "9632587410",
-      "work": "web developer",
-      "id": 2
-    },
-    {
-      "name": "anilraj meena",
-      "username": "anil050797",
-      "email": "anil@test.com",
-      "phone": "9632587410",
-      "work": "web developer",
-      "id": 3
-    },
-    {
       "name": "anilraj",
       "username": "anilraj",
       "email": "anil@test.com",
       "phone": "9649333527",
       "work": "web",
-      "id": 4
+      "id": 4,
+      "address": "mumbai"
     },
     {
       "name": "Brush ",

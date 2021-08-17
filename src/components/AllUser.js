@@ -1,6 +1,7 @@
 import { Table, TableBody, TableCell, TableHead, TableRow, makeStyles, Button } from '@material-ui/core';
 import React, {useEffect, useState} from 'react';
-import { getUsers } from '../service/api';
+import { Link } from 'react-router-dom';
+import { getUsers, deleteUsers } from '../service/api';
 
 const useStyles = makeStyles({
     table : {
@@ -34,6 +35,11 @@ export default function AllUser() {
        console.log(response.data);
        setUsers(response.data);
     }
+
+    const deleteUsersData = async(id) =>{
+        await deleteUsers(id);
+        getAllUsers();
+    }
     return (
         <div>
           
@@ -53,16 +59,19 @@ export default function AllUser() {
                     {
                        users.map((user, index) =>{
                            return(
+                              
                            <TableRow key={index} className={classes.rowData}>
-                            <TableCell>{index + 1 }</TableCell>
+                            <TableCell>{user.id }</TableCell>
                             <TableCell>{user.name}</TableCell>
                             <TableCell>{user.username}</TableCell>
                             <TableCell>{user.email}</TableCell>
                             <TableCell>{user.phone}</TableCell>
                             <TableCell>{user.address}</TableCell>
                             <TableCell>
-                                <Button variant="contained" color="primary" style={{marginRight: '10px', fontSize: '10px'}}>Edit</Button>
-                                <Button variant="contained" color="secondary"  style={{fontSize: '10px'}}>Delete</Button>
+                                <Button variant="contained" color="primary" style={{marginRight: '10px', fontSize: '10px'}}
+                                to={`/edit/${index+1}`} component = {Link}>Edit</Button>
+                                <Button variant="contained" color="secondary"  style={{fontSize: '10px'}}
+                                onClick={() => {deleteUsersData(user.id)}}>Delete</Button>
                             </TableCell>
                             </TableRow>)
                       
