@@ -5,15 +5,16 @@ const app = express();
 const route = express.Router();
 
 route.get('/', (req, res)=>{
-    res.status(200).json('hellow form the server side')
+    res.status(200).json('hello form the server side')
 });
 app.use('/about', route);
 
 
-const url = 'mongodb+srv://anilraj:anilraj5@cluster0.kk74h.mongodb.net/MERN-CRUD?retryWrites=true&w=majority'
+const url = 'mongodb+srv://anilraj:anilraj5@cluster0.kk74h.mongodb.net/mern180821?retryWrites=true&w=majority'
 
 mongoose.connect(url, {
     useNewUrlParser: true,
+    useCreateIndex: true,
     useUnifiedTopology: true,
     useFindAndModify: false
 }).then(() => {
