@@ -4,7 +4,7 @@ const app = express();
 const route = express.Router();
 
 const port = 4000;
-const url = 'mongodb+srv://anilraj:anilraj5@cluster0.kk74h.mongodb.net/mern180821?retryWrites=true&w=majority';
+const url = 'mongodb+srv://anilraj:<password>@cluster0.kk74h.mongodb.net/test?retryWrites=true&w=majority';
 
 mongoose.connect(url, {
     useCreateIndex: true,
