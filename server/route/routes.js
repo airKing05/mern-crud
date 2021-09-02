@@ -5,6 +5,6 @@ const addUser = require('../controller/userController');
 const route = express.Router();
 
 route.get('/', getUsers);
-route.get('/', addUser);
+route.get('/add-user', addUser);
 
 module.exports = route;

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // const url = 'http://localhost:3000/user';
-const url = 'http://localhost:4000/user';
+const url = 'http://localhost:4000/users';
 
 export const getUsers = async (id) => {
    id = id || ''
@@ -9,7 +9,7 @@ export const getUsers = async (id) => {
 } 
 
 export const addUsers = async (user) => {
-   return await axios.post(`${url}/add`, user)
+   return await axios.post(`${url}/add-user`, user)
 }
 
 export const editUsers = async(id, user) => {
